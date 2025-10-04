@@ -38,7 +38,7 @@ const Header = () => {
       <motion.svg
         ref={svgRef}
         viewBox={viewBox}
-        className="w-full fill-[#292929]/10 relative cursor-default"
+        className="w-full fill-[#292929]/10 relative cursor-default pointer-events-none"
         initial="hidden"
         animate="visible"
         stroke={"#fff"}
