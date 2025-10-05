@@ -32,6 +32,7 @@ const AnimatedParagraph = ({ text, index }) => {
       setHasAnimated(false);
     }
   }, [inView, controls]);
+  
   return (
     <motion.p
       ref={ref}

@@ -1,11 +1,11 @@
 "use client";
 
-import { Canvas, useFrame, useThree } from "@react-three/fiber";
+import { Canvas, useThree } from "@react-three/fiber";
 import { Environment, OrbitControls, useGLTF, Float } from "@react-three/drei";
-import { Suspense, useRef } from "react";
+import { Suspense } from "react";
 
 function Model() {
-  const { scene } = useGLTF("/models/tbot.glb");
+  const { scene } = useGLTF("/models/tbot-optimized.glb");
   const { viewport } = useThree();
 
   return (

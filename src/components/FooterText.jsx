@@ -31,7 +31,7 @@ const FooterText = () => {
       <svg
         ref={svgRef}
         viewBox={viewBox}
-        className="w-full fill-[#292929]/10 relative cursor-default"
+        className="w-full relative cursor-default"
         stroke={"#fff"}
         strokeWidth={"0.08"}
         preserveAspectRatio="none"
@@ -54,6 +54,11 @@ const FooterText = () => {
               floodOpacity="0.107"
             />
           </filter>
+
+            <linearGradient id="textGradient" x1="0%" y1="100%" x2="0%" y2="0%">
+              <stop offset="100%" stopColor="#292929" stopOpacity="0.1" />
+              <stop offset="0%" stopColor="#e1e1e1" stopOpacity="1" />
+            </linearGradient>
         </defs>
 
         <text
@@ -65,8 +70,12 @@ const FooterText = () => {
           alignmentBaseline="baseline"
           dominantBaseline="hanging"
           filter="url(#innerShadow)"
+          fill="url(#textGradient)"
         >
-          <tspan alignmentBaseline="baseline" className={"font-main-med uppercase"}>
+          <tspan
+            alignmentBaseline="baseline"
+            className={"font-main-med uppercase"}
+          >
             worth checking out
           </tspan>
         </text>

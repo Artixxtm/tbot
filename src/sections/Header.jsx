@@ -38,7 +38,7 @@ const Header = () => {
       <motion.svg
         ref={svgRef}
         viewBox={viewBox}
-        className="w-full fill-[#292929]/10 relative cursor-default pointer-events-none"
+        className="w-full relative cursor-default pointer-events-none"
         initial="hidden"
         animate="visible"
         stroke={"#fff"}
@@ -64,6 +64,11 @@ const Header = () => {
               floodOpacity="0.107"
             />
           </filter>
+
+          <linearGradient id="textGradient" x1="0%" y1="100%" x2="0%" y2="0%">
+            <stop offset="100%" stopColor="#292929" stopOpacity="0.1" />
+            <stop offset="10%" stopColor="#e1e1e1" stopOpacity="1" />
+          </linearGradient>
         </defs>
 
         <text
@@ -75,6 +80,7 @@ const Header = () => {
           alignmentBaseline="baseline"
           dominantBaseline="hanging"
           filter="url(#innerShadow)"
+          fill="url(#textGradient)"
         >
           {["T", "BOT"].map((text, index) => (
             <motion.tspan
