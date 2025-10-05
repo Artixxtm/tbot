@@ -5,7 +5,7 @@ import { Environment, OrbitControls, useGLTF, Float } from "@react-three/drei";
 import { Suspense } from "react";
 
 function Model() {
-  const { scene } = useGLTF("/models/tbot-optimized.glb");
+  const { scene } = useGLTF("/models/tbot.glb");
   const { viewport } = useThree();
 
   return (
