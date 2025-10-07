@@ -4,7 +4,7 @@ import {motion} from 'framer-motion'
 
 const Nav = () => {
   return (
-    <motion.nav initial={{opacity: 0, y: -15}} animate={{opacity: 1, y: 0}} exit={{opacity: 0, y: -15}} transition={{duration: 0.3, delay: 0.1}} className="w-full h-[168px] pt-[70px] md:pb-[20px] pb-[40px] flex items-center justify-center z-[10] relative">
+    <motion.nav initial={{opacity: 0, y: -15}} animate={{opacity: 1, y: 0}} exit={{opacity: 0, y: -15}} transition={{duration: 0.3, delay: 0.1}} className="w-full h-[168px] pt-[70px] md:pb-[20px] pb-[40px] flex items-center justify-center relative">
       <svg
         width="68"
         height="78"

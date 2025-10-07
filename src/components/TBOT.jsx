@@ -14,7 +14,7 @@ function Model() {
       rotationIntensity={0.5}
       floatIntensity={0.8}
     >
-      <group scale={viewport.width / 36}>
+      <group scale={viewport.width / (viewport.width > 4 ? 46 : 36)}>
         <primitive
           object={scene}
           rotation={[0.15, 4.7, 0]}
@@ -28,7 +28,7 @@ function Model() {
 const TBOT = ({ isDrag, setIsDrag }) => {
   return (
     <div
-      className={`w-full h-[100svh] absolute top-1/2 left-1/2 -translate-1/2 ${
+      className={`w-full lg:h-[110svh] h-[100svh] absolute top-1/2 left-1/2 -translate-1/2 ${
         isDrag ? "cursor-grabbing" : "cursor-grab"
       }`}
     >
