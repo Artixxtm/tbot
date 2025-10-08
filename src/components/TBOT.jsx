@@ -43,6 +43,7 @@ const TBOT = ({ isDrag, setIsDrag }) => {
         <Environment preset="studio" />
         <OrbitControls
           enableZoom={false}
+          enablePan={false}
           onStart={() => setIsDrag(true)}
           onEnd={() => setIsDrag(false)}
         />
