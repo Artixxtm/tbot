@@ -10,7 +10,7 @@ const Footer = () => {
         <br />
         <em>on our discord</em>
       </h2>
-      <div className="flex items-center w-auto md:gap-30 gap-10 relative">
+      <div className="flex items-center w-auto md:gap-[120px] *:gap-10 relative">
         <Link
           href={"https://discord.gg/QzKyJsX258"}
           target="_blank"
